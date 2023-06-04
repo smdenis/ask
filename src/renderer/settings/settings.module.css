@@ -1,0 +1,89 @@
+.root {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  color: #212529;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.title,
+.fields {
+  min-width: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.fields {
+  padding-top: 12px;
+}
+
+.circle {
+  margin-top: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: url('./icon.jpg') center center no-repeat;
+  background-size: contain;
+}
+
+.context,
+.model {
+  padding-top: 16px;
+}
+
+.required {
+  color: rgb(250, 82, 82);
+}
+
+.hotkeys {
+  padding-top: 24px;
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+.kbd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kbd div {
+  white-space: nowrap;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.control {
+  margin-top: 4px;
+}
+
+.description {
+  color: #868e96;
+  line-height: 1.2;
+  line-height: 18px;
+  font-size: calc(0.875rem - 0.125rem);
+}
+
+.close {
+  position: absolute;
+  right: 14px;
+  top: 16px;
+}

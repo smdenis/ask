@@ -1,0 +1,129 @@
+.msg {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  white-space: pre-wrap;
+  transition: opacity 0.2s ease-out;
+}
+
+.msgContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2px;
+  padding: 16px 16px;
+  box-sizing: border-box;
+  max-width: 700px;
+}
+
+.duration {
+  opacity: 0.5;
+}
+
+.msgLoading {
+  opacity: 0.7;
+}
+
+.buttonWrap {
+  padding-left: 24px;
+  padding-top: 12px;
+}
+
+.avatar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(177, 196, 202);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.text {
+  padding-left: 24px;
+}
+
+.text p,
+.text a,
+.text pre,
+.text h1,
+.text h2,
+.text h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.text ol {
+  padding: 0 16px;
+}
+
+.text pre {
+  background: #f1f2f4;
+  border-radius: 6px;
+  padding: 12px 32px 12px 12px;
+  margin: 8px 0;
+  position: relative;
+}
+
+.copyWrap {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  z-index: 1;
+}
+
+.copy {
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.msg:hover .copy {
+  opacity: 1;
+}
+
+.text pre,
+.text code {
+  word-break: break-word;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.text p code {
+  font-weight: bold;
+  background: #f1f2f4;
+  padding: 0 6px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.msgTheirs {
+  composes: msg;
+  background-color: #f7f9fa;
+}
+
+.msgTheirs .avatar {
+  background-color: violet;
+}
+
+.msgTheirsError {
+  composes: msgTheirs;
+  background-color: hsla(335, 100%, 87%, 0.287);
+}
